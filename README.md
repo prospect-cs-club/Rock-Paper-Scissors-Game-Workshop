@@ -1,0 +1,2 @@
+# Rock-Paper-Scissors-Game-Workshop
+In this workshop, you will use a premade HTML/CSS template to code the backend functionality for the classic Rock, Paper, Scissors game. Throughout the workshop, you will learn about some of the basic data types used in coding, functions and function declarations, the HTML DOM and how to change it with JavaScript, and more. This may seem like a lot for newcomers, but the workshop code will take you step-by-step through the process of building a working Rock, Paper, Scissors game. 
