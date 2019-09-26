@@ -1,0 +1,274 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline:0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.container > h1 {
+  font-size: 3em;
+  margin: 40px 0;
+  text-align: center;
+  width: inherit;
+}
+
+.container > p {
+  font-size: 1.1em;
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
+}
+
+.container > .playingBoard {
+  background: white;
+  border-radius: 50px;
+  display: block;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+  width: fit-content;
+}
+
+.container > .playingBoard > .boardDisplay {
+  background: lightgray;
+  border: 3px solid gray;
+  border-radius: 25px;
+  display: inline-block;
+  height: 100%;
+  max-width: 45%;
+  min-width: 25%;
+  padding: 40px;
+  position: relative;
+  top: 0;
+}
+
+.container > .playingBoard > .controlBoard {
+  display: inline-block;
+  height: 100%;
+  margin: 0 10px;
+  text-align: center;
+  vertical-align: top;
+  width: 200px;
+}
+
+.boardDisplay h2 {
+  font-size: 2.3em;
+}
+
+.boardDisplay img {
+  height: auto;
+  margin: 20px 40px;
+  width: 150px;
+}
+
+.boardDisplay h3 {
+  font-size: 1.25em;
+  text-decoration: underline;
+}
+
+.controlBoard > h4 {
+  margin: 20px 0;
+}
+
+.controlBoard > table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.controlBoard > table td {
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+}
+
+#playerLabel, #playerScore {
+  border-right: 2px solid black;
+}
+
+#computerLabel, #computerScore {
+  border-left: 2px solid black;
+}
+
+#result {
+  color: rgb(32, 255, 32);
+  font-size: 1.25em;
+  height: 48px;
+  margin: 5px auto;
+  text-align: center;
+  width: 150px;
+}
+
+.controlBoard > .playerTurn {
+  margin: 20px 0;
+}
+
+.playerTurn > form > button {
+  background: white;
+  border: 2px solid gray;
+  border-radius: 15px;
+  color: gray;
+  display: block;
+  font-size: 1.1em;
+  height: 30px;
+  margin: 20px auto;
+  width: 125px;
+  -webkit-transition : all 300ms ease-out; 
+  -moz-transition : all 300ms ease-out;
+  -o-transition : all 300ms ease-out;
+}
+
+.playerTurn > form > button:hover {
+  color: black;
+  background: rgb(56, 177, 218);
+  border-color: black;
+}
+
+@keyframes glow {
+  0% { background: rgb(23, 197, 255); }
+  50% { background: white; }
+  100% { background: rgb(23, 197, 255); }
+}
+
+.playerTurn > form > #resetBtn {
+  animation: glow 2.5s ease infinite;
+  visibility: hidden;
+  -webkit-transition: visibility 1000ms ease-out; 
+  -moz-transition: visibility 1000ms ease-out;
+  -o-transition: visibility 1000ms ease-out;
+}
+
+#settingsGear {
+  left: 15px;
+  position: fixed;
+  top: 15px;
+}
+
+#settingsGear > img {
+  height: 30px;
+  transform: scale(1.00, 1.00);
+  width: 30px;
+  -webkit-transition: all 400ms ease-out; 
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+}
+
+#settingsGear:hover img {
+  transform: scale(1.25, 1.25);
+}
+
+#settingsOptions {
+  background: white;
+  border: 3px solid gray;
+  border-radius: 35px;
+  display: none;
+  height: 250px;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -125px;
+  margin-top: -125px;
+  padding: 40px;
+  position: fixed;
+  text-align: left;
+  top: 50%;
+  transform-origin: center;
+  width: 250px;
+  z-index: 2;
+}
+
+#settingsOptions > h3 {
+  font-size: 1.75em;
+}
+
+#closeWindow {
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transform: scale(1.00, 1.00);
+  width: 24px;
+  -webkit-transition: 400ms ease-out; 
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+}
+
+#closeWindow:hover {
+  transform: scale(1.15, 1.15);
+} 
+
+#settingsOptions > form {
+  margin-top: 20px;
+}
+
+#settingsOptions > form > h5 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+#settingsOptions > form > .radioOption {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#settingsOptions > form > .radioOption > label {
+  margin-left: 5px;
+}
+
+#settingsOptions > form > button {
+  background: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  bottom: 30px;
+  color: black;
+  display: block;
+  font-size: 0.75em;
+  height: 30px;
+  margin: 20px auto;
+  position: absolute;
+  width: 125px;
+  -webkit-transition: 400ms ease-out; 
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+}
+
+#settingsOptions > form > button:Hover {
+  background: lightgray;
+}
+
+#background {
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 213), rgb(53, 117, 255));
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#blurredBackground {
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

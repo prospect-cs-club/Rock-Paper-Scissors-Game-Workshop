@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rock, Paper, Scissors</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/settings.js"></script>
+    <div class="container">
+      <h1>Rock, Paper, Scissors</h1>
+      <p>Below, you are provided with 3 buttons: Rock, Paper, and Scissors. Choose one of the 3 as your turn and the computer will do their turn at the same time. First one to 25 points wins!<br/><br />Remember: Rock beats Paper, Paper beats Scissors, Scissors beats Rock!</p>
+      <div class="playingBoard">
+        <div class="boardDisplay" id="player">
+          <h2>Player</h2>
+          <img id="playerImage" src="assets/images/player-head.png"> <!-- Can use hand emojis or literall emojis where stone is easter island statue -->
+          <h3 id="playerImageLabel"></h3>
+        </div>
+        <div class="controlBoard">
+          <h4>Score</h4>
+          <table>
+            <tr class="scoreLabels">
+              <td id="playerLabel">Player Score</td>
+              <td id="computerLabel">Computer Score</td>
+            </tr>
+            <tr class"scores">
+              <td id="playerScore">0</td>
+              <td id="computerScore">0</td>
+            </tr>
+          </table>
+          <p id="result"></p>
+          <div class="playerTurn">
+            <form>
+              <button class="choice" id="rock" type="button" onclick="chooseRock()">Rock</button>
+              <button class="choice" id="paper" type="button" onclick="choosePaper()">Paper</button>
+              <button class="choice" id="scissors" type="button" onclick="chooseScissors()">Scissors</button>
+              <button class="choice" id="resetBtn" type="button" onclick="resetBoard();">Reset Game</button>
+            </form>
+            <!-- We can also do buttons w/ anchor tags
+            <a class="button" id="rock" onclick="">Rock</a>
+            <a class="button" id="paper" onclick="">Paper</a>
+            <a class="button" id="scissors" onclick="">Scissors</a>
+            -->
+          </div>
+        </div>
+        <div class="boardDisplay" id="computer">
+          <h2>Computer</h2>
+          <img id="computerImage" src="assets/images/computer-head.png">
+          <h3 id="computerImageLabel"></h3>
+        </div>
+      </div>
+      <div class="settings">
+        <div id="background"></div>
+        <div id="blurredBackground"></div>
+        <a onclick="openWindow();" id="settingsGear"><img src="assets/images/settings-icon.png"></a>
+        <div id="settingsOptions">
+          <h3>Settings</h3>
+          <a onclick="closeWindow(); loadSettingsButtons();" id="closeWindow"><img src="assets/images/close-window.png"></a>
+          <form>
+            <h5>Images</h5>
+            <div class="radioOption">
+              <input type="radio" name="imageType" id="radio-hands" value="hands" checked="checked">
+              <label>Hands</label>
+            </div>
+            <div class="radioOption">
+              <input type="radio" name="imageType" id="radio-literal" value="realImages">
+              <label>Literal Icons</label>
+            </div>
+            <button type="button" onclick="closeWindow(); applySettings();">Apply Changes</button>
+          </form>
+        </div>
+      </div>
+    <div>
+  </body>
+</html>
