@@ -136,73 +136,21 @@ function initGameEndMessage(playerScore, computerScore) {
 */
 
 function chooseRock() {
-  changeImgAndText("player", "rock");
-  const computerMove = getComputerTurn();
-  if (computerMove == "scissors") {
-    // Condition for a win
-    changeImgAndText("computer", "scissors");
-    win();
-    incrementPlayerScore();
-  } else if (computerMove == "paper") {
-    // Condition for a loss
-    changeImgAndText("computer", "paper");
-    lose();
-    incrementComputerScore();
-  } else {
-    // Condition for tie
-    changeImgAndText("computer", "rock");
-    tie();
-  }
-  isGameDone();
+  // In this function, you will write code that runs when the user clicks the "Rock" button.
+  
 }
 
 function choosePaper() {
-  changeImgAndText("player", "paper");
-  const computerMove = getComputerTurn();
-  if (computerMove == "rock") {
-    // Condition for a win
-    changeImgAndText("computer", "rock");
-    win();
-    incrementPlayerScore();
-  } else if (computerMove == "scissors") {
-    // Condition for a loss
-    changeImgAndText("computer", "scissors");
-    lose();
-    incrementComputerScore();
-  } else {
-    // Condition for tie
-    changeImgAndText("computer", "paper");
-    tie();
-  }
-  isGameDone();
+  // In this function, you will write code that runs when the user clicks the "Paper" button.
+  
 }
 
 function chooseScissors() {
-  changeImgAndText("player", "scissors");
-  const computerMove = getComputerTurn();
-  if (computerMove == "paper") {
-    // Condition for a win
-    changeImgAndText("computer", "paper");
-    win();
-    incrementPlayerScore();
-  } else if (computerMove == "rock") {
-    // Condition for a loss
-    changeImgAndText("computer", "rock");
-    lose();
-    incrementComputerScore();
-  } else {
-    // Condition for tie
-    changeImgAndText("computer", "scissors");
-    tie();
-  }
-  isGameDone();
+  // In this function, you will write code that runs when the user clicks the "Scissors" button.
+  
 }
 
 function isGameDone() {
-  const playerScore = parseInt(document.getElementById("playerScore").innerHTML);
-  const computerScore = parseInt(document.getElementById("computerScore").innerHTML);
-  if (playerScore >= 25 || computerScore >= 25) {
-    initGameEndMessage(playerScore, computerScore);
-  }
-  console.log(`Checked if game is done. Score -> [ ${playerScore} : ${computerScore} ]`);
+  // In this function, you will write code that manages the logic of knowing if the game is over or not and who the winner is.
+  
 }
