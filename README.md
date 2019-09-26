@@ -5,7 +5,7 @@ In this workshop, you will use a premade HTML/CSS template to code the backend f
 ## Setting up the workshop:
 Note: This workshop will be centered around using Repl.it as the coding platform since Repl has several plugins and features that are incredibly helpful for newcomers to coding.
 
-  1. Log into repl.it and create a new repl. 
+  1. Log into repl.it (or create a repl.it account if you don't have one already) and create a new repl. 
   2. Choose the language "HTML,CSS,JS" and you can name the repl whatever you want. 
   3. In the input box with the placeholder text "github.com/user/repo (optional)", enter in the link of this GitHub repository (https://github.com/prospect-cs-club/Rock-Paper-Scissors-Game-Workshop).
   4. The file you will be coding in is name "script.js" and there is a specified section in that file where your code will go. You may look at the other files and tinker with them, but changing the code may cause you issues later when you are building the Rock, Paper, Scissors game. To be safe and ensure everything works properly, don't alter the code drastically (changing small details like color and font types should be fine, generally).
